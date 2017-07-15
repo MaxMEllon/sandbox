@@ -1,6 +1,6 @@
 a, b = gets.chomp.split.map(&:to_i)
 
-if a % 3 == 0 || b % 3 == 0 || ( a + b ) % 3 == 0
+if (a % 3).zero? || (b % 3).zero? || ((a + b) % 3).zero?
   puts 'Possible'
 else
   puts 'Impossible'
