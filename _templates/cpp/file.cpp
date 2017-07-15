@@ -78,24 +78,24 @@ int lcm(int a, int b) {
   if (a * b == 0) return 0; return (a * b / gcd(a, b));
 } // }}}
 vector<int> in_arr(int size) {
-	// 配列入力 {{{
-	vector<int> arr;
-	REP(i, size) {
-		int data;
-		cin >> data;
-		arr.push_back(data);
-	}
-	return arr;
+  // 配列入力 {{{
+  vector<int> arr;
+  REP(i, size) {
+    int data;
+    cin >> data;
+    arr.push_back(data);
+  }
+  return arr;
 } // }}}
 void out_arr(vector<int> arr) {
   // 配列出力 {{{
-	REP(i, arr.size()) {
-		cout << arr[i] << " ";
-	}
+  REP(i, arr.size()) {
+    cout << arr[i] << " ";
+  }
   cout << endl;
 } // }}}
 bool is_prime(int num) {
-	// 素数判定 {{{
+  // 素数判定 {{{
   if (num < 2) return false;
   else if (num == 2) return true;
   else if (num % 2 == 0) return false;
